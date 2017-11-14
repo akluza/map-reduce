@@ -1,5 +1,5 @@
 
-package org.simplilearn.demo;
+package org.simplilearn.demo.*;
 
 import org.apache.hadoop.fs.Path;
 import org.apache.hadoop.io.*;
