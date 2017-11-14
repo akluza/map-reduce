@@ -60,7 +60,7 @@
             <manifest>
               <addClasspath>true</addClasspath>
               <classpathPrefix>src/main/java/</classpathPrefix>
-              <mainClass>org.democode.mine.HelloMaven</mainClass>
+              <mainClass>org.simplilearn.demo.SalesCountryDriver</mainClass>
             </manifest>
           </archive>
         </configuration>

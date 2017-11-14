@@ -1,8 +1,9 @@
 
-package org.simplilearn.demo.*;
+package org.simplilearn.demo;
 
 import org.apache.hadoop.fs.Path;
-import org.apache.hadoop.io.*;
+import org.apache.hadoop.io.IntWritable;
+import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapred.*;
 
 public class SalesCountryDriver {
@@ -19,8 +20,8 @@ public class SalesCountryDriver {
 		job_conf.setOutputValueClass(IntWritable.class);
 
 		// Specify names of Mapper and Reducer Class
-		job_conf.setMapperClass(SalesCountry.SalesMapper.class);
-		job_conf.setReducerClass(SalesCountry.SalesCountryReducer.class);
+		job_conf.setMapperClass(org.simplilearn.demo.SalesMapper.class);
+		job_conf.setReducerClass(org.simplilearn.demo.SalesCountryReducer.class);
 
 		// Specify formats of the data type of Input and output
 		job_conf.setInputFormat(TextInputFormat.class);

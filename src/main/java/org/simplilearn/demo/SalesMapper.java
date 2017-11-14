@@ -1,11 +1,15 @@
 package org.simplilearn.demo;
 
-import java.io.IOException;
-
 import org.apache.hadoop.io.IntWritable;
 import org.apache.hadoop.io.LongWritable;
 import org.apache.hadoop.io.Text;
-import org.apache.hadoop.mapred.*;
+import org.apache.hadoop.mapred.MapReduceBase;
+import org.apache.hadoop.mapred.Mapper;
+import org.apache.hadoop.mapred.OutputCollector;
+import org.apache.hadoop.mapred.Reporter;
+
+import java.io.IOException;
+
 
 public class SalesMapper extends MapReduceBase implements Mapper<LongWritable, Text, Text, IntWritable> {
 	private final static IntWritable one = new IntWritable(1);
